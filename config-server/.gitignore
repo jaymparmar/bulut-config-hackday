@@ -1,0 +1,10 @@
+*.log.*
+*.log
+*.war
+*.rpm
+*.idea
+*.iml
+*.ipr
+*.iws
+build/
+.gradle/

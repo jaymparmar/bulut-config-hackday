@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE"
+        classpath "org.springframework:springloaded:1.2.4.RELEASE"
+    }
+}
+
+apply plugin: 'spring-boot'
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+
+    compile "org.springframework.cloud:spring-cloud-starter-config:1.0.1.RELEASE"
+    compile "org.springframework.cloud:spring-cloud-starter-bus-amqp:1.0.3.RELEASE"
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile "org.springframework.amqp:spring-rabbit:1.4.5.RELEASE"
+}

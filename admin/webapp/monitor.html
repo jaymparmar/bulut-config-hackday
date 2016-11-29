@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Config Monitor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="monitor.js"></script>
+</head>
+<body style="background-image: url('http://build.id.bskyb.com/user/bulut/avatar/image'); background-size: 5% auto; background-position: 0 0; background-repeat: no-repeat">
+
+<div class="container">
+    <div class="jumbotron" style="background-image: url('https://www.channeltivity.com/blog/wp-content/uploads/2013/01/cloud.jpg'); background-size: 20% auto">
+        <h3>Application Status Monitor</h3>
+    </div>
+
+    <div id="apps" class="row">
+        <div class="col-md-6"><div class="well well-lg app" id="signin"><h2>signin</h2></div></div>
+        <div class="col-md-6"><div class="well well-lg app" id="signup"><h2>signup</h2></div></div>
+        <div class="col-md-6"><div class="well well-lg app" id="servicesignup"><h2>servicesignup</h2></div></div>
+        <div class="col-md-6"><div class="well well-lg app" id="resetpassword"><h2>resetpassword</h2></div></div>
+        <div class="col-md-6"><div class="well well-lg app" id="forgotusername"><h2>forgotusername</h2></div></div>
+        <div class="col-md-6"><div class="well well-lg app" id="captcha"><h2>captcha</h2></div></div>
+        <div class="col-md-6"><div class="well well-lg app" id="navigation"><h2>navigation</h2></div></div>
+        <div class="col-md-6"><div class="well well-lg app" id="express"><h2>express</h2></div></div>
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <input type="hidden" id="appName"/>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 id="modal-title" class="modal-title">Title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Pick a Color</p>
+                    <div id="html5DIV">
+                        <input id="html5colorpicker" class="form-control" value="#ff0000" type="color">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="saveButton" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
